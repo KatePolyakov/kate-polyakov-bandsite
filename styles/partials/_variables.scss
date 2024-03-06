@@ -1,11 +1,19 @@
+//breakpoints
+
+$desktop-breakpoint: 80rem; // 1280px
+$tablet-breakpoint: 48rem; // 768px
+
 //colors
 
-$bandSite-Black: #323232;
-$silver: #afafaf;
-$white: #ffffff;
-$bandSite-DarkBlack: #000000;
-$mercury: #e1e1e1;
-$alabaster: #fafafa;
+//primary
+$bandSite-Black: #323232; //Primary text color for dark on light background. Dark background color
+$silver: #afafaf; //Seconday text color. Inactive CTA text color.
+$white: #ffffff; //Primary text color for light on dark background. Light background color. Active CTA text color
+
+//secondary
+$bandSite-DarkBlack: #000000; //CTA hover state.
+$mercury: #e1e1e1; //Divider line. Form field outline.
+$alabaster: #fafafa; //Alternative light background colo
 
 //font-weights
 

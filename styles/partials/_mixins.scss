@@ -1,6 +1,91 @@
-@use "./typography" as *;
-@use "./variables" as *;
+@use './typography' as *;
+@use './variables' as *;
 
+//screen breakpoints
 
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
 
 //Fonts
+@mixin fonts-site($font-size, $line-height, $font-weight, $color) {
+  font-family: 'AvenirNextLTPro', sans-serif;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+//MOBILE TEXT STYLES
+@mixin fonts-page-header-mobile {
+  @include fonts-site(1.5rem, 2rem, $bold, $bandSite-Black);
+}
+
+@mixin fonts-section-header-mobile {
+  @include fonts-site(1.5rem, 2rem, $bold, $bandSite-Black);
+}
+
+@mixin fonts-subheader-mobile {
+  @include fonts-site(0.875rem, 1.375rem, $demi, $bandSite-Black);
+}
+
+@mixin fonts-body-copy-mobile {
+  @include fonts-site(0.8125rem, 1.125rem, $regular, $bandSite-Black);
+}
+
+@mixin fonts-footer-copy-mobile {
+  @include fonts-site(0.8125rem, 1.125rem, $regular, $bandSite-Black);
+}
+
+@mixin fonts-labels-button-mobile {
+  @include fonts-site(0.625rem, 1.25rem, $bold, $bandSite-Black);
+}
+
+//DESKTOP & TABLET TEXT STYLES
+
+@mixin fonts-page-header-desktop-tablet {
+  @include fonts-site(3.75rem, 4.25rem, $bold, $bandSite-Black);
+}
+
+@mixin fonts-section-header-desktop-tablet {
+  @include fonts-site(2.25rem, 2.75rem, $bold, $bandSite-Black);
+}
+
+@mixin fonts-subheader-desktop-tablet {
+  @include fonts-site(1.5rem, 2rem, $demi, $bandSite-Black);
+}
+
+@mixin fonts-body-copy-desktop-tablet {
+  @include fonts-site(0.875rem, 1.375rem, $regular, $bandSite-Black);
+}
+
+@mixin fonts-footer-copy-desktop-tablet {
+  @include fonts-site(0.875rem, 1.25rem, $regular, $bandSite-Black);
+}
+
+@mixin fonts-labels-button-desktop-tablet {
+  @include fonts-site(0.75rem, 1.25rem, $bold, $bandSite-Black);
+}
+
+//DIVIDERS
+
+@mixin divider-desktop {
+  border-bottom: 1px solid $mercury;
+}
+
+@mixin divider-tablet {
+  border-bottom: 1px solid $mercury;
+}
+
+@mixin divider-mobile {
+  border-bottom: 1px solid $mercury;
+}
