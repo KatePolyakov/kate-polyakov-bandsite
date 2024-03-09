@@ -1,2 +1,87 @@
 @use 'partials/variables' as *;
 @use 'partials/mixins' as *;
+
+.about {
+  margin-top: 110px;
+
+  &__background {
+    background-image: url('../assets/images/hero-bio.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+
+  &__overlay {
+    height: 18rem;
+    background-color: rgb(50, 50, 50, 0.5);
+    display: flex;
+
+    @include fonts-page-header-mobile;
+    letter-spacing: 1px;
+    justify-content: start;
+    align-items: center;
+    color: $white;
+    padding: 0 16px;
+  }
+
+  &__bio {
+    margin: 24px 16px 0;
+
+    &-header {
+      @include fonts-page-header-mobile;
+      color: $bandsite-black;
+      padding-bottom: 16px;
+    }
+
+    &-img {
+      background-image: url('../assets/images/band.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 18rem;
+    }
+  }
+
+  &__blockquote-speech {
+    margin-top: 16px;
+  }
+  &__blockquote-speech,
+  &__blockquote-author {
+    @include fonts-subheader-mobile;
+  }
+
+  &__blockquote-author {
+    margin-top: 10px;
+  }
+
+  &__article {
+    margin: 16px 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-header {
+      @include fonts-subheader-mobile;
+    }
+  }
+}
+
+.gallery {
+  margin: 24px 16px 16px;
+  &__header {
+    @include fonts-page-header-mobile;
+    color: $bandsite-black;
+    padding-bottom: 16px;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

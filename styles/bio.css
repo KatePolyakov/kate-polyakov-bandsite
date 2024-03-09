@@ -15,4 +15,95 @@
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("woff2"), url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("woff");
   font-weight: 700;
   font-style: normal;
+}
+.about {
+  margin-top: 110px;
+}
+.about__background {
+  background-image: url("../assets/images/hero-bio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+}
+.about__overlay {
+  height: 18rem;
+  background-color: rgba(50, 50, 50, 0.5);
+  display: flex;
+  font-family: "AvenirNextLTPro", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  justify-content: start;
+  align-items: center;
+  color: #ffffff;
+  padding: 0 16px;
+}
+.about__bio {
+  margin: 24px 16px 0;
+}
+.about__bio-header {
+  font-family: "AvenirNextLTPro", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #323232;
+  padding-bottom: 16px;
+}
+.about__bio-img {
+  background-image: url("../assets/images/band.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+}
+.about__blockquote-speech {
+  margin-top: 16px;
+}
+.about__blockquote-speech, .about__blockquote-author {
+  font-family: "AvenirNextLTPro", sans-serif;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+.about__blockquote-author {
+  margin-top: 10px;
+}
+.about__article {
+  margin: 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about__article-header {
+  font-family: "AvenirNextLTPro", sans-serif;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+.gallery {
+  margin: 24px 16px 16px;
+}
+.gallery__header {
+  font-family: "AvenirNextLTPro", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #323232;
+  padding-bottom: 16px;
+}
+.gallery__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.gallery__images img {
+  width: 100%;
 }/*# sourceMappingURL=bio.css.map */
