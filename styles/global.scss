@@ -31,11 +31,13 @@ ul {
   }
 
   &__logo-link {
-    @include fonts-page-header-mobile;
-    font-weight: $regular;
-    color: $white;
     display: flex;
     justify-content: center;
+
+    img {
+      width: 120px;
+      height: 20px;
+    }
   }
 
   &__links {
@@ -61,9 +63,57 @@ ul {
   background: $bandsite-black;
   width: 100%;
   &__wrapper {
-    padding-top: 24px 16px;
+    padding: 24px 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  &__header {
+    @include fonts-page-header-mobile;
+    color: $white;
+  }
+
+  &__links {
+    display: flex;
+    justify-self: start;
+    gap: 16px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__main,
+  &__main-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__main-group {
+    @include fonts-footer-copy-mobile;
+    color: $white;
+  }
+
+  &__group-header {
+    font-weight: $demi;
+  }
+
+  &__logo {
+    padding-top: 26px;
+    display: flex;
+    justify-content: start;
+
+    img {
+      width: 120px;
+      height: 20px;
+    }
+  }
+  &__copyright {
+    @include fonts-labels-button-mobile;
+    color: $white;
+    font-weight: $regular;
   }
 }
