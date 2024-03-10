@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: 'Avenir-Bolt';
+  font-family: 'Avenir-bold';
   src: url('../assets/fonts/AvenirNextLTPro-Bold.otf') format('opentype'),
     url('../assets/fonts/AvenirNextLTProBold.ttf') format('truetype');
   font-weight: 700;
@@ -43,8 +43,8 @@
   line-height: $line-height;
 }
 
-@mixin fonts-site-bolt($font-size, $line-height) {
-  font-family: 'Avenir-Bolt';
+@mixin fonts-site-bold($font-size, $line-height) {
+  font-family: 'Avenir-bold';
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
@@ -57,8 +57,9 @@
   line-height: $line-height;
 }
 
-@mixin fonts-page-header-mobile-bolt {
-  @include fonts-site-bolt(1.5rem, 2rem);
+//MOBILE
+@mixin fonts-page-header-mobile-bold {
+  @include fonts-site-bold(1.5rem, 2rem);
 }
 
 @mixin fonts-subheader-mobile-regular {
@@ -69,8 +70,8 @@
   @include fonts-site-demi(0.875rem, 1.375rem);
 }
 
-@mixin fonts-subheader-mobile-bolt {
-  @include fonts-site-bolt(0.875rem, 1.375rem);
+@mixin fonts-subheader-mobile-bold {
+  @include fonts-site-bold(0.875rem, 1.375rem);
 }
 
 @mixin fonts-body-copy-mobile-regular {
@@ -89,10 +90,29 @@
   @include fonts-site-regular(0.625rem, 1.25rem);
 }
 
-//MOBILE TEXT STYLES
+//Tablets & Desktop
 
-@mixin fonts-section-header-mobile {
-  @include fonts-site(1.5rem, 2rem, $bold);
+@mixin fonts-subheader-desktop-tablet-regular {
+  @include fonts-site-regular(1.5rem, 2rem);
+}
+
+@mixin fonts-subheader-desktop-tablet-demi {
+  @include fonts-site-demi(1.5rem, 2rem);
+}
+@mixin fonts-subheader-desktop-tablet-bold {
+  @include fonts-site-bold(1.5rem, 2rem);
+}
+
+@mixin fonts-body-copy-desktop-tablet-regular {
+  @include fonts-site-regular(0.875rem, 1.375rem);
+}
+
+@mixin fonts-page-header-desktop-tablet-bold {
+  @include fonts-site-bold(3rem, 3.5rem);
+}
+
+@mixin fonts-body-copy-desktop-tablet-bold {
+  @include fonts-site-bold(0.875rem, 1.375rem);
 }
 
 //DESKTOP & TABLET TEXT STYLES
@@ -103,10 +123,6 @@
 
 @mixin fonts-section-header-desktop-tablet {
   @include fonts-site(2.25rem, 2.75rem, $bold);
-}
-
-@mixin fonts-subheader-desktop-tablet {
-  @include fonts-site(1.5rem, 2rem, $demi);
 }
 
 @mixin fonts-body-copy-desktop-tablet {

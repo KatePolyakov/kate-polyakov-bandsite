@@ -5,12 +5,20 @@
 .about {
   margin-top: 99px;
 
+  @include tablet {
+    margin-top: 73px;
+  }
+
   &__background {
     background-image: url('../assets/images/hero-bio.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 18rem;
+
+    @include tablet {
+      height: 23rem;
+    }
   }
 
   &__overlay {
@@ -18,21 +26,35 @@
     background-color: rgb(50, 50, 50, 0.5);
     display: flex;
 
-    @include fonts-page-header-mobile-bolt;
+    @include fonts-page-header-mobile-bold;
     letter-spacing: 1px;
     justify-content: start;
     align-items: center;
     color: $white;
     padding: 0 16px;
+
+    @include tablet {
+      @include fonts-page-header-desktop-tablet-bold;
+      height: 23rem;
+      padding: 0 36px;
+    }
   }
 
   &__bio {
     margin: 24px 16px 0;
 
+    @include tablet {
+      margin: 48px 36px 0;
+    }
+
     &-header {
-      @include fonts-page-header-mobile-bolt;
+      @include fonts-page-header-mobile-bold;
       color: $bandsite-black;
       padding-bottom: 16px;
+      @include tablet {
+        @include fonts-page-header-desktop-tablet-bold;
+        padding-bottom: 36px;
+      }
     }
 
     &-img {
@@ -41,15 +63,25 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 18rem;
+      @include tablet {
+        margin: 0 72px;
+      }
     }
   }
 
   &__blockquote-speech {
     margin-top: 16px;
+
+    @include tablet {
+      margin: 36px 72px 0;
+    }
   }
   &__blockquote-speech,
   &__blockquote-author {
-    @include fonts-subheader-mobile-bolt;
+    @include fonts-subheader-mobile-bold;
+    @include tablet {
+      @include fonts-subheader-desktop-tablet-demi;
+    }
   }
 
   &__blockquote-author {
@@ -62,8 +94,17 @@
     flex-direction: column;
     gap: 16px;
 
+    @include tablet {
+      margin: 36px 108px 0;
+      gap: 36px;
+    }
+
     &-header {
       @include fonts-subheader-mobile-demi;
+
+      @include tablet {
+        @include fonts-subheader-desktop-tablet-bold;
+      }
     }
 
     &-main {
@@ -71,16 +112,31 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+      @include tablet {
+        @include fonts-body-copy-desktop-tablet-regular;
+        flex-direction: row;
+        gap: 36px;
+      }
     }
   }
 }
 
 .gallery {
   margin: 24px 16px 16px;
+
+  @include tablet {
+    margin: 48px 36px 36px;
+  }
   &__header {
-    @include fonts-page-header-mobile-bolt;
+    @include fonts-page-header-mobile-bold;
     color: $bandsite-black;
     padding-bottom: 16px;
+
+    @include tablet {
+      padding-bottom: 36px;
+      @include fonts-page-header-desktop-tablet-bold;
+    }
   }
 
   &__images {
@@ -88,8 +144,16 @@
     flex-wrap: wrap;
     gap: 16px;
 
+    @include tablet {
+      display: flex;
+    }
+
     img {
       width: 100%;
+
+      @include tablet {
+        width: 31%;
+      }
     }
   }
 }

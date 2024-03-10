@@ -29,6 +29,12 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    @include tablet {
+      flex-direction: row;
+      gap: 50px;
+      padding-left: 36px;
+      align-items: baseline;
+    }
   }
 
   &__logo-link {
@@ -45,9 +51,17 @@ ul {
     display: flex;
     align-content: space-evenly;
     justify-content: space-evenly;
+
+    @include tablet {
+      gap: 50px;
+    }
   }
   &__links-a {
     @include fonts-subheader-mobile-regular;
+
+    @include tablet {
+      @include fonts-subheader-desktop-tablet-regular;
+    }
 
     color: $mercury;
     display: flex;
@@ -59,10 +73,14 @@ ul {
     padding-bottom: 16px;
   }
   &__links-active {
-    @include fonts-subheader-mobile-bolt;
+    @include fonts-subheader-mobile-bold;
     color: $white;
     border-bottom: 2px solid $white;
     padding-bottom: 16px;
+
+    @include tablet {
+      @include fonts-subheader-desktop-tablet-demi;
+    }
   }
 }
 
@@ -74,21 +92,56 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include tablet {
+      padding: 48px 36px;
+    }
+  }
+
+  &__wrapper-tablet {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__wrapper-left {
+    @include tablet {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 36px;
+    }
   }
 
   &__header {
-    @include fonts-page-header-mobile-bolt;
+    @include fonts-page-header-mobile-bold;
     color: $white;
+
+    @include tablet {
+      @include fonts-page-header-desktop-tablet-bold;
+    }
   }
 
   &__links {
+    margin-top: 16px;
     display: flex;
     justify-self: start;
     gap: 16px;
 
+    @include tablet {
+      margin-top: 0;
+    }
+
     img {
       width: 25px;
       height: 25px;
+
+      @include tablet {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 
@@ -99,13 +152,30 @@ ul {
     gap: 16px;
   }
 
+  &__main {
+    @include tablet {
+      padding: 36px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &__main-group {
     @include fonts-footer-copy-mobile-regular;
     color: $white;
+
+    @include tablet {
+      @include fonts-body-copy-desktop-tablet-regular;
+    }
   }
 
   &__group-header {
     @include fonts-footer-copy-mobile-demi;
+
+    @include tablet {
+      @include fonts-body-copy-desktop-tablet-bold;
+    }
   }
 
   &__group-mailto {
@@ -114,14 +184,26 @@ ul {
     }
   }
 
-  &__logo {
+  &__logo-phone {
     padding-top: 26px;
     display: flex;
     justify-content: start;
+    @include tablet {
+      padding-top: 0;
+      display: none;
+    }
 
     img {
       width: 120px;
       height: 20px;
+    }
+  }
+
+  &__logo-tablet {
+    display: none;
+    @include tablet {
+      padding-top: 0;
+      display: flex;
     }
   }
   &__copyright {
