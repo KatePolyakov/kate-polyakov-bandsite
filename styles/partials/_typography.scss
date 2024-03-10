@@ -2,59 +2,97 @@
 @use './mixins' as *;
 
 @font-face {
-  font-family: 'AvenirNextLTPro';
+  font-family: 'Avenir-Regular';
   src: url('../assets/fonts/AvenirNextLTPro-Regular.otf') format('opentype'),
     url('../assets/fonts/AvenirNextLTPro.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'AvenirNextLTPro';
-//   src: url('../../assets/fonts/AvenirNextLTPro-Demi.otf') format('woff2'), url('../../assets/fonts/AvenirNextLTPro-Demi.otf') format('woff');
-//   font-weight: 600;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Avenir-Demi';
+  src: url('../assets/fonts/AvenirNextLTPro-Demi.otf') format('opentype'),
+    url('../assets/fonts/AvenirNextLTProDemi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: 'AvenirNextLTPro';
-//   src: url('../../assets/fonts/AvenirNextLTPro-Bold.otf') format('woff2'), url('../../assets/fonts/AvenirNextLTPro-Bold.otf') format('woff');
-//   font-weight: 700;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Avenir-Bolt';
+  src: url('../assets/fonts/AvenirNextLTPro-Bold.otf') format('opentype'),
+    url('../assets/fonts/AvenirNextLTProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 //Fonts
 @mixin fonts-site($font-size, $line-height, $font-weight) {
-  font-family: 'AvenirNextLTPro';
+  //delete after
+  font-family: 'Avenir-Regular';
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
 }
 
-//MOBILE TEXT STYLES
-@mixin fonts-page-header-mobile {
-  @include fonts-site(1.5rem, 2rem, $bold);
+//new mixins MOBILE TEXT STYLES
+@mixin fonts-site-regular($font-size, $line-height) {
+  font-family: 'Avenir-Regular';
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
 }
+
+@mixin fonts-site-bolt($font-size, $line-height) {
+  font-family: 'Avenir-Bolt';
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin fonts-site-demi($font-size, $line-height) {
+  font-family: 'Avenir-Demi';
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin fonts-page-header-mobile-bolt {
+  @include fonts-site-bolt(1.5rem, 2rem);
+}
+
+@mixin fonts-subheader-mobile-regular {
+  @include fonts-site-regular(0.875rem, 1.375rem);
+}
+
+@mixin fonts-subheader-mobile-demi {
+  @include fonts-site-demi(0.875rem, 1.375rem);
+}
+
+@mixin fonts-subheader-mobile-bolt {
+  @include fonts-site-bolt(0.875rem, 1.375rem);
+}
+
+@mixin fonts-body-copy-mobile-regular {
+  @include fonts-site-regular(0.8125rem, 1.125rem);
+}
+
+@mixin fonts-footer-copy-mobile-regular {
+  @include fonts-site-regular(0.8125rem, 1.125rem);
+}
+
+@mixin fonts-footer-copy-mobile-demi {
+  @include fonts-site-demi(0.8125rem, 1.125rem);
+}
+
+@mixin fonts-labels-button-mobile-regular {
+  @include fonts-site-regular(0.625rem, 1.25rem);
+}
+
+//MOBILE TEXT STYLES
 
 @mixin fonts-section-header-mobile {
   @include fonts-site(1.5rem, 2rem, $bold);
-}
-
-@mixin fonts-subheader-mobile {
-  @include fonts-site(0.875rem, 1.375rem, $demi);
-}
-
-@mixin fonts-body-copy-mobile {
-  @include fonts-site(0.8125rem, 1.125rem, $regular);
-}
-
-@mixin fonts-footer-copy-mobile {
-  @include fonts-site(0.8125rem, 1.125rem, $regular);
-}
-
-@mixin fonts-labels-button-mobile {
-  @include fonts-site(0.625rem, 1.25rem, $bold);
 }
 
 //DESKTOP & TABLET TEXT STYLES

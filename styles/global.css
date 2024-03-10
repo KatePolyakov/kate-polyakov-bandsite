@@ -1,7 +1,19 @@
 @font-face {
-  font-family: "AvenirNextLTPro";
+  font-family: "Avenir-Regular";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir-Demi";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir-Bolt";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 * {
@@ -43,17 +55,24 @@ ul li {
   justify-content: space-evenly;
 }
 .nav__links-a {
-  font-family: "AvenirNextLTPro";
+  font-family: "Avenir-Regular";
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-weight: 600;
   color: #e1e1e1;
   display: flex;
   width: 50%;
   justify-content: center;
 }
+.nav__links-a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 16px;
+}
 .nav__links-active {
+  font-family: "Avenir-Bolt";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 16px;
@@ -70,11 +89,10 @@ ul li {
   gap: 16px;
 }
 .footer__header {
-  font-family: "AvenirNextLTPro";
+  font-family: "Avenir-Bolt";
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
   color: #ffffff;
 }
 .footer__links {
@@ -92,15 +110,20 @@ ul li {
   gap: 16px;
 }
 .footer__main-group {
-  font-family: "AvenirNextLTPro";
+  font-family: "Avenir-Regular";
   font-style: normal;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  font-weight: 400;
   color: #ffffff;
 }
 .footer__group-header {
-  font-weight: 600;
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+.footer__group-mailto a {
+  color: #ffffff;
 }
 .footer__logo {
   padding-top: 26px;
@@ -112,11 +135,9 @@ ul li {
   height: 20px;
 }
 .footer__copyright {
-  font-family: "AvenirNextLTPro";
+  font-family: "Avenir-Regular";
   font-style: normal;
   font-size: 0.625rem;
   line-height: 1.25rem;
-  font-weight: 700;
   color: #ffffff;
-  font-weight: 400;
 }/*# sourceMappingURL=global.css.map */

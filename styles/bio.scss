@@ -18,7 +18,7 @@
     background-color: rgb(50, 50, 50, 0.5);
     display: flex;
 
-    @include fonts-page-header-mobile;
+    @include fonts-page-header-mobile-bolt;
     letter-spacing: 1px;
     justify-content: start;
     align-items: center;
@@ -30,7 +30,7 @@
     margin: 24px 16px 0;
 
     &-header {
-      @include fonts-page-header-mobile;
+      @include fonts-page-header-mobile-bolt;
       color: $bandsite-black;
       padding-bottom: 16px;
     }
@@ -49,7 +49,7 @@
   }
   &__blockquote-speech,
   &__blockquote-author {
-    @include fonts-subheader-mobile;
+    @include fonts-subheader-mobile-bolt;
   }
 
   &__blockquote-author {
@@ -63,7 +63,14 @@
     gap: 16px;
 
     &-header {
-      @include fonts-subheader-mobile;
+      @include fonts-subheader-mobile-demi;
+    }
+
+    &-main {
+      @include fonts-body-copy-mobile-regular;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
   }
 }
@@ -71,7 +78,7 @@
 .gallery {
   margin: 24px 16px 16px;
   &__header {
-    @include fonts-page-header-mobile;
+    @include fonts-page-header-mobile-bolt;
     color: $bandsite-black;
     padding-bottom: 16px;
   }

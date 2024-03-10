@@ -2,7 +2,6 @@
 @use 'partials/typography' as *;
 @use 'partials/mixins' as *;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -48,13 +47,19 @@ ul {
     justify-content: space-evenly;
   }
   &__links-a {
-    @include fonts-subheader-mobile;
+    @include fonts-subheader-mobile-regular;
+
     color: $mercury;
     display: flex;
     width: 50%;
     justify-content: center;
   }
+  &__links-a:hover {
+    border-bottom: 2px solid $white;
+    padding-bottom: 16px;
+  }
   &__links-active {
+    @include fonts-subheader-mobile-bolt;
     color: $white;
     border-bottom: 2px solid $white;
     padding-bottom: 16px;
@@ -72,7 +77,7 @@ ul {
   }
 
   &__header {
-    @include fonts-page-header-mobile;
+    @include fonts-page-header-mobile-bolt;
     color: $white;
   }
 
@@ -95,12 +100,18 @@ ul {
   }
 
   &__main-group {
-    @include fonts-footer-copy-mobile;
+    @include fonts-footer-copy-mobile-regular;
     color: $white;
   }
 
   &__group-header {
-    font-weight: $demi;
+    @include fonts-footer-copy-mobile-demi;
+  }
+
+  &__group-mailto {
+    a {
+      color: $white;
+    }
   }
 
   &__logo {
@@ -114,8 +125,7 @@ ul {
     }
   }
   &__copyright {
-    @include fonts-labels-button-mobile;
+    @include fonts-labels-button-mobile-regular;
     color: $white;
-    font-weight: $regular;
   }
 }
