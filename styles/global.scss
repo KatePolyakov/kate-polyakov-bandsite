@@ -57,10 +57,10 @@ ul {
     }
   }
   &__links-a {
-    @include fonts-subheader-mobile-regular;
+    @include mobile-subheader-regular;
 
     @include tablet {
-      @include fonts-subheader-desktop-tablet-regular;
+      @include desk-tab-subheader-regular;
     }
 
     color: $mercury;
@@ -73,13 +73,13 @@ ul {
     padding-bottom: 16px;
   }
   &__links-active {
-    @include fonts-subheader-mobile-bold;
+    @include mobile-subheader-bold;
     color: $white;
     border-bottom: 2px solid $white;
     padding-bottom: 16px;
 
     @include tablet {
-      @include fonts-subheader-desktop-tablet-demi;
+      @include desk-tab-subheader-demi;
     }
   }
 }
@@ -116,11 +116,11 @@ ul {
   }
 
   &__header {
-    @include fonts-page-header-mobile-bold;
+    @include mobile-header-bold;
     color: $white;
 
     @include tablet {
-      @include fonts-page-header-desktop-tablet-bold;
+      @include desk-tab-header-bold;
     }
   }
 
@@ -162,19 +162,19 @@ ul {
   }
 
   &__main-group {
-    @include fonts-footer-copy-mobile-regular;
+    @include mobile-footer-regular;
     color: $white;
 
     @include tablet {
-      @include fonts-body-copy-desktop-tablet-regular;
+      @include desk-tab-body-regular;
     }
   }
 
   &__group-header {
-    @include fonts-footer-copy-mobile-demi;
+    @include mobile-footer-demi;
 
     @include tablet {
-      @include fonts-body-copy-desktop-tablet-bold;
+      @include desk-tab-body-bold;
     }
   }
 
@@ -207,7 +207,7 @@ ul {
     }
   }
   &__copyright {
-    @include fonts-labels-button-mobile-regular;
+    @include mobile-footer-button-regular;
     color: $white;
   }
 }

@@ -115,7 +115,7 @@
   .about__blockquote-speech, .about__blockquote-author {
     font-family: "Avenir-Demi";
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     line-height: 2rem;
   }
 }
@@ -144,7 +144,7 @@
   .about__article-header {
     font-family: "Avenir-bold";
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     line-height: 2rem;
   }
 }

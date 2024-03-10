@@ -26,7 +26,7 @@
     background-color: rgb(50, 50, 50, 0.5);
     display: flex;
 
-    @include fonts-page-header-mobile-bold;
+    @include mobile-header-bold;
     letter-spacing: 1px;
     justify-content: start;
     align-items: center;
@@ -34,7 +34,7 @@
     padding: 0 16px;
 
     @include tablet {
-      @include fonts-page-header-desktop-tablet-bold;
+      @include desk-tab-header-bold;
       height: 23rem;
       padding: 0 36px;
     }
@@ -48,11 +48,11 @@
     }
 
     &-header {
-      @include fonts-page-header-mobile-bold;
+      @include mobile-header-bold;
       color: $bandsite-black;
       padding-bottom: 16px;
       @include tablet {
-        @include fonts-page-header-desktop-tablet-bold;
+        @include desk-tab-header-bold;
         padding-bottom: 36px;
       }
     }
@@ -78,9 +78,9 @@
   }
   &__blockquote-speech,
   &__blockquote-author {
-    @include fonts-subheader-mobile-bold;
+    @include mobile-subheader-bold;
     @include tablet {
-      @include fonts-subheader-desktop-tablet-demi;
+      @include desk-tab-subheader-demi;
     }
   }
 
@@ -100,21 +100,21 @@
     }
 
     &-header {
-      @include fonts-subheader-mobile-demi;
+      @include mobile-subheader-demi;
 
       @include tablet {
-        @include fonts-subheader-desktop-tablet-bold;
+        @include desk-tab-subheader-bold;
       }
     }
 
     &-main {
-      @include fonts-body-copy-mobile-regular;
+      @include mobile-body-regular;
       display: flex;
       flex-direction: column;
       gap: 16px;
 
       @include tablet {
-        @include fonts-body-copy-desktop-tablet-regular;
+        @include desk-tab-body-regular;
         flex-direction: row;
         gap: 36px;
       }
@@ -129,13 +129,13 @@
     margin: 48px 36px 36px;
   }
   &__header {
-    @include fonts-page-header-mobile-bold;
+    @include mobile-header-bold;
     color: $bandsite-black;
     padding-bottom: 16px;
 
     @include tablet {
       padding-bottom: 36px;
-      @include fonts-page-header-desktop-tablet-bold;
+      @include desk-tab-header-bold;
     }
   }
 

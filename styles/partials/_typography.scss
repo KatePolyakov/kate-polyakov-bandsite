@@ -25,17 +25,7 @@
   font-style: normal;
 }
 
-//Fonts
-@mixin fonts-site($font-size, $line-height, $font-weight) {
-  //delete after
-  font-family: 'Avenir-Regular';
-  font-style: normal;
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-//new mixins MOBILE TEXT STYLES
+//MOBILE TEXT STYLES
 @mixin fonts-site-regular($font-size, $line-height) {
   font-family: 'Avenir-Regular';
   font-style: normal;
@@ -58,81 +48,59 @@
 }
 
 //MOBILE
-@mixin fonts-page-header-mobile-bold {
+@mixin mobile-header-bold {
   @include fonts-site-bold(1.5rem, 2rem);
 }
 
-@mixin fonts-subheader-mobile-regular {
+@mixin mobile-subheader-regular {
   @include fonts-site-regular(0.875rem, 1.375rem);
 }
 
-@mixin fonts-subheader-mobile-demi {
+@mixin mobile-subheader-demi {
   @include fonts-site-demi(0.875rem, 1.375rem);
 }
 
-@mixin fonts-subheader-mobile-bold {
+@mixin mobile-subheader-bold {
   @include fonts-site-bold(0.875rem, 1.375rem);
 }
 
-@mixin fonts-body-copy-mobile-regular {
+@mixin mobile-body-regular {
   @include fonts-site-regular(0.8125rem, 1.125rem);
 }
 
-@mixin fonts-footer-copy-mobile-regular {
+@mixin mobile-footer-regular {
   @include fonts-site-regular(0.8125rem, 1.125rem);
 }
 
-@mixin fonts-footer-copy-mobile-demi {
+@mixin mobile-footer-demi {
   @include fonts-site-demi(0.8125rem, 1.125rem);
 }
 
-@mixin fonts-labels-button-mobile-regular {
+@mixin mobile-footer-button-regular {
   @include fonts-site-regular(0.625rem, 1.25rem);
 }
 
 //Tablets & Desktop
 
-@mixin fonts-subheader-desktop-tablet-regular {
-  @include fonts-site-regular(1.5rem, 2rem);
+@mixin desk-tab-subheader-regular {
+  @include fonts-site-regular(1.15rem, 2rem);
 }
 
-@mixin fonts-subheader-desktop-tablet-demi {
-  @include fonts-site-demi(1.5rem, 2rem);
+@mixin desk-tab-subheader-demi {
+  @include fonts-site-demi(1.15rem, 2rem);
 }
-@mixin fonts-subheader-desktop-tablet-bold {
-  @include fonts-site-bold(1.5rem, 2rem);
+@mixin desk-tab-subheader-bold {
+  @include fonts-site-bold(1.15rem, 2rem);
 }
 
-@mixin fonts-body-copy-desktop-tablet-regular {
+@mixin desk-tab-body-regular {
   @include fonts-site-regular(0.875rem, 1.375rem);
 }
 
-@mixin fonts-page-header-desktop-tablet-bold {
+@mixin desk-tab-header-bold {
   @include fonts-site-bold(3rem, 3.5rem);
 }
 
-@mixin fonts-body-copy-desktop-tablet-bold {
+@mixin desk-tab-body-bold {
   @include fonts-site-bold(0.875rem, 1.375rem);
-}
-
-//DESKTOP & TABLET TEXT STYLES
-
-@mixin fonts-page-header-desktop-tablet {
-  @include fonts-site(3.75rem, 4.25rem, $bold);
-}
-
-@mixin fonts-section-header-desktop-tablet {
-  @include fonts-site(2.25rem, 2.75rem, $bold);
-}
-
-@mixin fonts-body-copy-desktop-tablet {
-  @include fonts-site(0.875rem, 1.375rem, $regular);
-}
-
-@mixin fonts-footer-copy-desktop-tablet {
-  @include fonts-site(0.875rem, 1.25rem, $regular);
-}
-
-@mixin fonts-labels-button-desktop-tablet {
-  @include fonts-site(0.75rem, 1.25rem, $bold);
 }
