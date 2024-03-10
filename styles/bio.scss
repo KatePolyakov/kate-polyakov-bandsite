@@ -175,6 +175,16 @@
       @include tablet {
         width: 31%;
       }
+      @include desktop {
+        filter: grayscale(1);
+        transition: 0.7s ease-in-out;
+      }
+    }
+
+    img:hover {
+      @include desktop {
+        filter: grayscale(0);
+      }
     }
   }
 }

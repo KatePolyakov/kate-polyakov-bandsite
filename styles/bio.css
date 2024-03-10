@@ -244,4 +244,15 @@
   .gallery__images img {
     width: 31%;
   }
+}
+@media screen and (min-width: 80rem) {
+  .gallery__images img {
+    filter: grayscale(1);
+    transition: 0.7s ease-in-out;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .gallery__images img:hover {
+    filter: grayscale(0);
+  }
 }/*# sourceMappingURL=bio.css.map */
