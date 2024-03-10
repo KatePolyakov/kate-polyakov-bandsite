@@ -8,6 +8,9 @@
   @include tablet {
     margin-top: 73px;
   }
+  @include desktop {
+    margin-top: 81px;
+  }
 
   &__background {
     background-image: url('../assets/images/hero-bio.jpg');
@@ -27,33 +30,39 @@
     display: flex;
 
     @include mobile-header-bold;
-    letter-spacing: 1px;
     justify-content: start;
     align-items: center;
     color: $white;
-    padding: 0 16px;
+    padding: 0 1rem;
 
     @include tablet {
       @include desk-tab-header-bold;
       height: 23rem;
-      padding: 0 36px;
+      padding: 0 2.25rem;
+    }
+
+    @include desktop {
+      padding: 0 5rem;
     }
   }
 
   &__bio {
-    margin: 24px 16px 0;
+    margin: 1.5rem 1rem 0;
 
     @include tablet {
-      margin: 48px 36px 0;
+      margin: 3rem 2.25rem 0;
+    }
+    @include desktop {
+      margin: 3rem 5rem 0;
     }
 
     &-header {
       @include mobile-header-bold;
       color: $bandsite-black;
-      padding-bottom: 16px;
+      padding-bottom: 1rem;
       @include tablet {
         @include desk-tab-header-bold;
-        padding-bottom: 36px;
+        padding-bottom: 2.25rem;
       }
     }
 
@@ -66,14 +75,20 @@
       @include tablet {
         margin: 0 72px;
       }
+      @include desktop {
+        margin: 0 10rem;
+      }
     }
   }
 
   &__blockquote-speech {
-    margin-top: 16px;
+    margin-top: 1rem;
 
     @include tablet {
-      margin: 36px 72px 0;
+      margin: 2.25rem 72px 0;
+    }
+    @include desktop {
+      margin: 2.25rem 10rem 0;
     }
   }
   &__blockquote-speech,
@@ -89,14 +104,17 @@
   }
 
   &__article {
-    margin: 16px 16px 0;
+    margin: 1rem 1rem 0;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 
     @include tablet {
-      margin: 36px 108px 0;
-      gap: 36px;
+      margin: 2.25rem 108px 0;
+      gap: 2.25rem;
+    }
+    @include desktop {
+      margin: 2.25rem 15rem 0;
     }
 
     &-header {
@@ -111,30 +129,33 @@
       @include mobile-body-regular;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 1rem;
 
       @include tablet {
         @include desk-tab-body-regular;
         flex-direction: row;
-        gap: 36px;
+        gap: 2.25rem;
       }
     }
   }
 }
 
 .gallery {
-  margin: 24px 16px 16px;
+  margin: 1.5rem 1rem 1rem;
 
   @include tablet {
-    margin: 48px 36px 36px;
+    margin: 3rem 2.25rem 2.25rem;
+  }
+  @include desktop {
+    margin: 3rem 5rem 2.25rem;
   }
   &__header {
     @include mobile-header-bold;
     color: $bandsite-black;
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 
     @include tablet {
-      padding-bottom: 36px;
+      padding-bottom: 2.25rem;
       @include desk-tab-header-bold;
     }
   }
@@ -142,7 +163,7 @@
   &__images {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
 
     @include tablet {
       display: flex;

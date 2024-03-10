@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  // border: 1px dotted darkblue;
 }
 
 a {
@@ -25,15 +24,19 @@ ul {
   top: 0;
 
   &__wrapper {
-    padding-top: 24px;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     @include tablet {
       flex-direction: row;
-      gap: 50px;
-      padding-left: 36px;
+      gap: 3.125rem;
+      padding-left: 2.25rem;
       align-items: baseline;
+    }
+    @include desktop {
+      padding-top: 2rem;
+      padding-left: 5rem;
     }
   }
 
@@ -42,8 +45,8 @@ ul {
     justify-content: center;
 
     img {
-      width: 120px;
-      height: 20px;
+      width: 7.5rem;
+      height: 1.25rem;
     }
   }
 
@@ -53,7 +56,7 @@ ul {
     justify-content: space-evenly;
 
     @include tablet {
-      gap: 50px;
+      gap: 3.125rem;
     }
   }
   &__links-a {
@@ -70,13 +73,13 @@ ul {
   }
   &__links-a:hover {
     border-bottom: 2px solid $white;
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
   }
   &__links-active {
     @include mobile-subheader-bold;
     color: $white;
     border-bottom: 2px solid $white;
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 
     @include tablet {
       @include desk-tab-subheader-demi;
@@ -88,13 +91,17 @@ ul {
   background: $bandsite-black;
   width: 100%;
   &__wrapper {
-    padding: 24px 16px;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 
     @include tablet {
-      padding: 48px 36px;
+      padding: 3rem 2.25rem;
+    }
+
+    @include desktop {
+      padding: 3rem 5rem;
     }
   }
 
@@ -111,7 +118,7 @@ ul {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 36px;
+      gap: 2.25rem;
     }
   }
 
@@ -125,22 +132,22 @@ ul {
   }
 
   &__links {
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-self: start;
-    gap: 16px;
+    gap: 1rem;
 
     @include tablet {
       margin-top: 0;
     }
 
     img {
-      width: 25px;
-      height: 25px;
+      width: 1.563rem;
+      height: 1.563rem;
 
       @include tablet {
-        width: 36px;
-        height: 36px;
+        width: 2.25rem;
+        height: 2.25rem;
       }
     }
   }
@@ -149,15 +156,22 @@ ul {
   &__main-group {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
   }
 
   &__main {
     @include tablet {
-      padding: 36px 0;
+      padding: 2.25rem 0;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 7.85rem;
     }
   }
 
@@ -194,8 +208,8 @@ ul {
     }
 
     img {
-      width: 120px;
-      height: 20px;
+      width: 7.5rem;
+      height: 1.25rem;
     }
   }
 
