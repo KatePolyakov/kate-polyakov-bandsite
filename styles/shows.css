@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir-Demi";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir-bold";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.shows {
+  margin-top: 99px;
+}
+@media screen and (min-width: 48rem) {
+  .shows {
+    margin-top: 73px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows {
+    margin-top: 81px;
+  }
+}
+.shows__background {
+  background-image: url("../assets/images/hero-shows.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+}
+@media screen and (min-width: 48rem) {
+  .shows__background {
+    height: 23rem;
+  }
+}
+.shows__overlay {
+  height: 18rem;
+  background-color: rgba(50, 50, 50, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: start;
+  color: #ffffff;
+  padding: 2rem 1rem 0;
+}
+@media screen and (min-width: 48rem) {
+  .shows__overlay {
+    font-family: "Avenir-bold";
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    height: 23rem;
+    padding: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows__overlay {
+    padding: 0 5rem;
+  }
+}
+.shows__music iframe {
+  width: 100%;
+}
+.shows__page-subheader {
+  font-family: "Avenir-Regular";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.shows__page-header {
+  font-family: "Avenir-bold";
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}/*# sourceMappingURL=shows.css.map */
