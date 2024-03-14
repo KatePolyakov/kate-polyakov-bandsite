@@ -81,13 +81,25 @@
     }
   }
 
-  &__mobile-subheader {
+  &__subheader-date,
+  &__subheader-venue,
+  &__subheader-location {
     @include mobile-subheader-demi;
     color: $silver;
-    margin: 1rem;
+    padding: 1rem 1rem 0.5rem;
+  }
+  &__date,
+  &__venue,
+  &__location {
+    padding-left: 1rem;
+    @include mobile-subheader-regular;
   }
 
-  &__mobile-button {
+  &__date {
+    font-weight: bold;
+  }
+
+  &__button {
     border: none;
     margin: 1rem;
     background-color: $bandsite-black;
@@ -95,13 +107,15 @@
     height: 50px;
     @include mobile-header-demiLess;
     border-radius: 5px;
+    width: -moz-available;
+    width: -webkit-fill-available;
   }
 
-  &__mobile-button:hover {
+  &__button:hover {
     background-color: $bandSite-DarkBlack;
   }
 
-  &__mobile-divider {
+  &__divider {
     @include divider;
     width: 100%;
     margin-bottom: 1rem;
