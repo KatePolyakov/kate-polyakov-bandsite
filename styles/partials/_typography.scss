@@ -51,6 +51,13 @@
   @include fonts-site-bold(1.5rem, 2rem);
 }
 
+@mixin mobile-header-demi {
+  @include fonts-site-demi(1.5rem, 2rem);
+}
+@mixin mobile-header-demiLess {
+  @include fonts-site-demi(1.25rem, 2rem);
+}
+
 @mixin mobile-header-regularLess {
   @include fonts-site-regular(1.0rem, 2rem);
 }

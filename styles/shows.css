@@ -42,7 +42,7 @@
   }
 }
 .shows__overlay {
-  height: 18rem;
+  height: 16rem;
   background-color: rgba(50, 50, 50, 0.5);
   display: flex;
   flex-direction: column;
@@ -80,4 +80,50 @@
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.calendar__section {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.calendar__section-header {
+  font-family: "Avenir-bold";
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 1rem;
+}
+.calendar__list-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.calendar__mobile-subheader {
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #afafaf;
+  margin: 1rem;
+}
+.calendar__mobile-button {
+  border: none;
+  margin: 1rem;
+  background-color: #323232;
+  color: #ffffff;
+  height: 50px;
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  border-radius: 5px;
+}
+.calendar__mobile-button:hover {
+  background-color: #000000;
+}
+.calendar__mobile-divider {
+  border: 0;
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=shows.css.map */
