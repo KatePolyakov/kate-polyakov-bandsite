@@ -9,7 +9,7 @@
     margin-top: 73px;
   }
   @include desktop {
-    margin-top: 81px;
+    margin-top: 5rem;
   }
 
   &__background {
@@ -20,7 +20,11 @@
     height: 18rem;
 
     @include tablet {
-      height: 23rem;
+      height: 29rem;
+    }
+
+    @include desktop {
+      height: 42rem;
     }
   }
 
@@ -38,65 +42,157 @@
     @include tablet {
       @include desk-tab-header-bold;
       height: 23rem;
-      padding: 0 2.25rem;
+      padding: 2.875rem 2.25rem;
     }
 
     @include desktop {
-      padding: 0 5rem;
+      padding: 3rem 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 36rem;
     }
+  }
+
+  &__page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   &__music {
     iframe {
       width: 100%;
     }
+
+    @include tablet {
+      iframe {
+        width: 50%;
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      width: 500px;
+      margin-right: 7rem;
+
+      iframe {
+        width: 100%;
+      }
+    }
   }
 
   &__page-subheader {
     @include mobile-header-regularLess;
+
+    @include tablet {
+      @include desk-tab-subheader-bold;
+    }
   }
 
   &__page-header {
     @include mobile-header-bold;
+
+    @include tablet {
+      @include desk-tab-header-bold;
+    }
   }
 }
 
 .calendar {
   &__section {
-    margin-top: 6.25rem;
-    display: flex;
+    margin: 4rem 0;
 
-    flex-direction: column;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 6rem;
+      margin: 3rem;
+    }
 
     &-header {
       @include mobile-header-bold;
-      margin: 0 1rem;
+      margin: 7rem 1rem 0;
+      @include tablet {
+        margin: 2rem;
+        @include desk-tab-header-bold;
+      }
     }
   }
 
   &__list {
-    &-mobile {
-      display: flex;
-      flex-direction: column;
+    @include tablet {
+      margin: 1rem;
+    }
+
+    @include desktop {
+      width: 100%;
+      margin-top: 2.5rem;
     }
   }
 
+  //subheader tablet-desktop
+  &__concert {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 1rem;
+      align-items: center;
+
+      border-bottom: 1px solid $silver;
+    }
+  }
+
+  //subheader mobile
   &__subheader-date,
   &__subheader-venue,
   &__subheader-location {
     @include mobile-subheader-demi;
     color: $silver;
     padding: 1rem 1rem 0.5rem;
+
+    @include tablet {
+      display: none;
+    }
   }
+
+  //subheader tablet
+  &__titles {
+    display: none;
+    @include tablet {
+      display: flex;
+      padding: 1rem 1rem 0.5rem;
+      @include desk-tab-subheader-demi;
+
+      color: $silver;
+
+      &-date,
+      &-venue,
+      &-location {
+        width: 25%;
+      }
+    }
+  }
+
   &__date,
   &__venue,
   &__location {
     padding-left: 1rem;
     @include mobile-subheader-regular;
+
+    @include tablet {
+      display: flex;
+      @include desk-tab-body-regular;
+      padding-left: 0;
+      width: 100%;
+    }
   }
 
   &__date {
-    font-weight: bold;
+    font-weight: $bold;
   }
 
   &__button {
@@ -119,5 +215,9 @@
     @include divider;
     width: 100%;
     margin-bottom: 1rem;
+
+    @include tablet {
+      display: none;
+    }
   }
 }

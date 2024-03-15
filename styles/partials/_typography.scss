@@ -59,7 +59,7 @@
 }
 
 @mixin mobile-header-regularLess {
-  @include fonts-site-regular(1.0rem, 2rem);
+  @include fonts-site-regular(1rem, 2rem);
 }
 
 @mixin mobile-subheader-regular {
@@ -101,6 +101,10 @@
 }
 @mixin desk-tab-subheader-bold {
   @include fonts-site-bold(1.15rem, 2rem);
+}
+
+@mixin desk-tab-subheader-regular {
+  @include fonts-site-regular(1.15rem, 2rem);
 }
 
 @mixin desk-tab-body-regular {

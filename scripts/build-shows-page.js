@@ -35,6 +35,33 @@ const dates = [
 const concertList = document.querySelector('.calendar__list');
 console.log(concertList);
 
+//title for tablet/desktop
+
+const titleDesktop = () => {
+  const titles_group = document.createElement('div');
+  titles_group.classList.add('calendar__titles');
+
+  const subheaderDate = document.createElement('p');
+  subheaderDate.classList.add('calendar__titles-date');
+  subheaderDate.innerText = 'DATE';
+  titles_group.append(subheaderDate);
+
+  const subheaderLocation = document.createElement('p');
+  subheaderLocation.classList.add('calendar__titles-location');
+  subheaderLocation.innerText = 'LOCATION';
+  titles_group.append(subheaderLocation);
+
+  const subheaderVenue = document.createElement('p');
+  subheaderVenue.classList.add('calendar__titles-venue');
+  subheaderVenue.innerText = 'VENUE';
+  titles_group.append(subheaderVenue);
+
+  //3. append to the parent
+  concertList.append(titles_group);
+};
+
+titleDesktop();
+
 function displayConcert(concert) {
   //1. create an element
   const concertElement = document.createElement('div');
@@ -42,7 +69,7 @@ function displayConcert(concert) {
   //2a. add class
   concertElement.classList.add('calendar__concert');
 
-  //2b.
+  //subheaders for mobile version
   const subheaderDate = document.createElement('p');
   subheaderDate.classList.add('calendar__subheader-date');
   subheaderDate.innerText = 'DATE';
@@ -87,8 +114,6 @@ function displayConcert(concert) {
 }
 
 function displayConcerts() {
-  // Clear the content of the .calendar__list element
-  //concertList.innerHTML = '';
   dates.forEach((concert) => {
     displayConcert(concert);
   });

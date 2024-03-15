@@ -26,7 +26,7 @@
 }
 @media screen and (min-width: 80rem) {
   .shows {
-    margin-top: 81px;
+    margin-top: 5rem;
   }
 }
 .shows__background {
@@ -38,7 +38,12 @@
 }
 @media screen and (min-width: 48rem) {
   .shows__background {
-    height: 23rem;
+    height: 29rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows__background {
+    height: 42rem;
   }
 }
 .shows__overlay {
@@ -58,16 +63,41 @@
     font-size: 3rem;
     line-height: 3.5rem;
     height: 23rem;
-    padding: 0 2.25rem;
+    padding: 2.875rem 2.25rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .shows__overlay {
-    padding: 0 5rem;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 36rem;
   }
+}
+.shows__page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .shows__music iframe {
   width: 100%;
+}
+@media screen and (min-width: 48rem) {
+  .shows__music iframe {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .shows__music {
+    display: flex;
+    width: 500px;
+    margin-right: 7rem;
+  }
+  .shows__music iframe {
+    width: 100%;
+  }
 }
 .shows__page-subheader {
   font-family: "Avenir-Regular";
@@ -75,28 +105,77 @@
   font-size: 1rem;
   line-height: 2rem;
 }
+@media screen and (min-width: 48rem) {
+  .shows__page-subheader {
+    font-family: "Avenir-bold";
+    font-style: normal;
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+}
 .shows__page-header {
   font-family: "Avenir-bold";
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
 }
+@media screen and (min-width: 48rem) {
+  .shows__page-header {
+    font-family: "Avenir-bold";
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
 
 .calendar__section {
-  margin-top: 6.25rem;
-  display: flex;
-  flex-direction: column;
+  margin: 4rem 0;
+}
+@media screen and (min-width: 80rem) {
+  .calendar__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    margin: 3rem;
+  }
 }
 .calendar__section-header {
   font-family: "Avenir-bold";
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin: 0 1rem;
+  margin: 7rem 1rem 0;
 }
-.calendar__list-mobile {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 48rem) {
+  .calendar__section-header {
+    margin: 2rem;
+    font-family: "Avenir-bold";
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .calendar__list {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .calendar__list {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .calendar__concert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #afafaf;
+  }
 }
 .calendar__subheader-date, .calendar__subheader-venue, .calendar__subheader-location {
   font-family: "Avenir-Demi";
@@ -106,6 +185,28 @@
   color: #afafaf;
   padding: 1rem 1rem 0.5rem;
 }
+@media screen and (min-width: 48rem) {
+  .calendar__subheader-date, .calendar__subheader-venue, .calendar__subheader-location {
+    display: none;
+  }
+}
+.calendar__titles {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .calendar__titles {
+    display: flex;
+    padding: 1rem 1rem 0.5rem;
+    font-family: "Avenir-Demi";
+    font-style: normal;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    color: #afafaf;
+  }
+  .calendar__titles-date, .calendar__titles-venue, .calendar__titles-location {
+    width: 25%;
+  }
+}
 .calendar__date, .calendar__venue, .calendar__location {
   padding-left: 1rem;
   font-family: "Avenir-Regular";
@@ -113,8 +214,19 @@
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
+@media screen and (min-width: 48rem) {
+  .calendar__date, .calendar__venue, .calendar__location {
+    display: flex;
+    font-family: "Avenir-Regular";
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    padding-left: 0;
+    width: 100%;
+  }
+}
 .calendar__date {
-  font-weight: bold;
+  font-weight: 700;
 }
 .calendar__button {
   border: none;
@@ -138,4 +250,9 @@
   border-bottom: 1px solid #e1e1e1;
   width: 100%;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .calendar__divider {
+    display: none;
+  }
 }/*# sourceMappingURL=shows.css.map */
