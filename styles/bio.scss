@@ -188,3 +188,92 @@
     }
   }
 }
+
+.conversation {
+  margin: 1.5rem 1rem 1rem;
+
+  @include tablet {
+    margin: 3rem 2.25rem 2.25rem;
+  }
+  @include desktop {
+    margin: 3rem 5rem 2.25rem;
+  }
+  &__header {
+    @include mobile-header-bold;
+    color: $bandsite-black;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      padding-bottom: 2.25rem;
+      @include desk-tab-header-bold;
+    }
+  }
+
+  &__form-group {
+    border-bottom: 1px solid $mercury;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+
+    @include tablet {
+      padding: 0 7rem;
+    }
+
+    @include desktop {
+      padding: 0 23rem;
+    }
+
+    label {
+      padding-bottom: 0.25rem;
+
+      @include mobile-subheader-demi;
+      color: $silver;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      padding: 0.34rem;
+
+      border: 1px solid $silver;
+      border-radius: 4px;
+      background-color: $mercury;
+
+      @include mobile-subheader-regular;
+    }
+
+    input:hover,
+    textarea:hover,
+    input:active,
+    textarea:active,
+    input:focus,
+    textarea:focus {
+      border: 1px solid $bandSite-DarkBlack;
+    }
+
+    button {
+      border: none;
+      border-radius: 4px;
+      padding: 0.5625rem 0;
+
+      background-color: $bandsite-black;
+      color: $white;
+
+      @include mobile-subheader-demi;
+
+      @include tablet {
+        width: 33%;
+        display: flex;
+        align-self: end;
+        justify-content: center;
+      }
+    }
+
+    button:hover {
+      background-color: $bandSite-DarkBlack;
+    }
+  }
+}

@@ -255,4 +255,103 @@
   .gallery__images img:hover {
     filter: grayscale(0);
   }
+}
+
+.conversation {
+  margin: 1.5rem 1rem 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .conversation {
+    margin: 3rem 2.25rem 2.25rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conversation {
+    margin: 3rem 5rem 2.25rem;
+  }
+}
+.conversation__header {
+  font-family: "Avenir-bold";
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .conversation__header {
+    padding-bottom: 2.25rem;
+    font-family: "Avenir-bold";
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+.conversation__form-group {
+  border-bottom: 1px solid #e1e1e1;
+}
+.conversation__form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+@media screen and (min-width: 48rem) {
+  .conversation__form {
+    padding: 0 7rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conversation__form {
+    padding: 0 23rem;
+  }
+}
+.conversation__form label {
+  padding-bottom: 0.25rem;
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #afafaf;
+}
+.conversation__form input,
+.conversation__form textarea {
+  margin-bottom: 1rem;
+  padding: 0.34rem;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  font-family: "Avenir-Regular";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.conversation__form input:hover,
+.conversation__form textarea:hover,
+.conversation__form input:active,
+.conversation__form textarea:active,
+.conversation__form input:focus,
+.conversation__form textarea:focus {
+  border: 1px solid #000000;
+}
+.conversation__form button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5625rem 0;
+  background-color: #323232;
+  color: #ffffff;
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+@media screen and (min-width: 48rem) {
+  .conversation__form button {
+    width: 33%;
+    display: flex;
+    align-self: end;
+    justify-content: center;
+  }
+}
+.conversation__form button:hover {
+  background-color: #000000;
 }/*# sourceMappingURL=bio.css.map */
