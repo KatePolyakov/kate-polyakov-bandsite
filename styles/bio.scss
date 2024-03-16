@@ -209,21 +209,21 @@
     }
   }
 
-  &__form-group {
-    border-bottom: 1px solid $mercury;
-  }
-
   &__form {
     display: flex;
     flex-direction: column;
     padding-left: 4rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid $mercury;
 
     @include tablet {
-      padding: 0 7rem;
+      margin: 0 7rem;
+      padding-bottom: 2rem;
     }
 
     @include desktop {
-      padding: 0 23rem;
+      margin: 0 18rem;
     }
 
     label {
