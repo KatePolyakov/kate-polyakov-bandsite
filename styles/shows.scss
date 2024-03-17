@@ -146,6 +146,18 @@
     }
   }
 
+  &__concert:hover {
+    @include tablet {
+      background-color: $alabaster;
+    }
+  }
+
+  &__concert:focus-within {
+    @include tablet {
+      background-color: $silver;
+    }
+  }
+
   //subheader mobile
   &__subheader-date,
   &__subheader-venue,
@@ -196,6 +208,7 @@
   }
 
   &__button {
+    cursor: pointer;
     border: none;
     margin: 1rem;
     background-color: $bandsite-black;

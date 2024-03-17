@@ -237,12 +237,15 @@
     textarea {
       margin-bottom: 1rem;
       padding: 0.34rem;
-
-      border: 1px solid $silver;
+      border: 1px solid $mercury;
       border-radius: 4px;
-      background-color: $mercury;
+      background-color: $alabaster;
 
       @include mobile-subheader-regular;
+
+      @include tablet {
+        margin-bottom: 2rem;
+      }
     }
 
     input:hover,
@@ -255,6 +258,7 @@
     }
 
     button {
+      cursor: pointer;
       border: none;
       border-radius: 4px;
       padding: 0.5625rem 0;

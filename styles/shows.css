@@ -177,6 +177,16 @@
     border-bottom: 1px solid #afafaf;
   }
 }
+@media screen and (min-width: 48rem) {
+  .calendar__concert:hover {
+    background-color: #fafafa;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .calendar__concert:focus-within {
+    background-color: #afafaf;
+  }
+}
 .calendar__subheader-date, .calendar__subheader-venue, .calendar__subheader-location {
   font-family: "Avenir-Demi";
   font-style: normal;
@@ -229,6 +239,7 @@
   font-weight: 700;
 }
 .calendar__button {
+  cursor: pointer;
   border: none;
   margin: 1rem;
   background-color: #323232;
