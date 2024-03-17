@@ -181,7 +181,7 @@ ul {
     color: $white;
 
     @include tablet {
-      @include desk-tab-body-regular;
+      @include desk-tab-footer-regular;
     }
   }
 
@@ -189,7 +189,7 @@ ul {
     @include mobile-footer-demi;
 
     @include tablet {
-      @include desk-tab-body-bold;
+      @include desk-tab-footer-bold;
     }
   }
 

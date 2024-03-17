@@ -16,11 +16,11 @@ const comments = [
   },
 ];
 
-//find a div element comments__list for comments
-const commentsList = document.querySelector('.comments__list');
+//find a div element ".comment" for comments
+const commentsList = document.querySelector('.comment');
 console.log(commentsList);
 
-//create new elements inside comments__list
+//create new elements inside ".comment"
 const commentsDesktop = (item) => {
   const commentHeader = document.createElement('div');
   commentHeader.classList.add('comment__header');
@@ -78,8 +78,5 @@ form.addEventListener('submit', (e) => {
   };
 
   comments.unshift(newComment);
-  commentsList.append(displayComment(newComment));
+  displayComment(newComment);
 });
-
-
-displayComment();

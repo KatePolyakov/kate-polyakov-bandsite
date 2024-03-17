@@ -277,3 +277,55 @@
     }
   }
 }
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  @include tablet {
+    margin: 0 7rem;
+  }
+  @include desktop {
+    margin: 0 18rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-left: 4rem;
+
+    @include tablet {
+      padding-top: 1rem;
+      padding-left: 4rem;
+    }
+
+    &-name {
+      @include mobile-subheader-demi;
+
+      @include tablet {
+        @include desk-tab-subheader-demi;
+      }
+    }
+
+    &-date {
+      @include mobile-subheader-regular;
+      color: $silver;
+
+      @include tablet {
+        @include desk-tab-subheader-regular;
+      }
+    }
+  }
+  &__text {
+    @include mobile-subheader-regular;
+    border-bottom: 1px solid $mercury;
+    padding: 0 1rem 1rem 4rem;
+
+    @include tablet {
+      padding-right: 0;
+      padding-bottom: 2rem;
+      @include desk-tab-body-regular;
+    }
+  }
+}

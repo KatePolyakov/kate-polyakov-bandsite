@@ -108,7 +108,7 @@
 }
 
 @mixin desk-tab-body-regular {
-  @include fonts-site-regular(0.875rem, 1.375rem);
+  @include fonts-site-regular(1rem, 1.375rem);
 }
 
 @mixin desk-tab-header-bold {
@@ -116,5 +116,12 @@
 }
 
 @mixin desk-tab-body-bold {
-  @include fonts-site-bold(0.875rem, 1.375rem);
+  @include fonts-site-bold(1rem, 1.375rem);
+}
+
+@mixin desk-tab-footer-regular {
+  @include fonts-site-regular(0.8125rem, 1.375rem);
+}
+@mixin desk-tab-footer-bold {
+  @include fonts-site-bold(0.8125rem, 1.375rem);
 }
