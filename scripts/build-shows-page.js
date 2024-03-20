@@ -1,42 +1,11 @@
-const dates = [
-  {
-    date: 'Mon Sept 09 2024',
-    place: 'Ronald Lane',
-    city: 'San Francisco, CA',
-  },
-  {
-    date: 'Tue Sept 17 2024',
-    place: 'Pier 3 East',
-    city: 'San Francisco, CA',
-  },
-  {
-    date: 'Sat Oct 12 2024',
-    place: 'View Lounge',
-    city: 'San Francisco, CA',
-  },
-  {
-    date: 'Sat Nov 16 2024',
-    place: 'Hyatt Agency',
-    city: 'San Francisco, CA',
-  },
-  {
-    date: 'Fri Nov 29 2024',
-    place: 'Moscow Center',
-    city: 'San Francisco, CA',
-  },
-  {
-    date: 'Wed Dec 18 2024',
-    place: 'Press Club',
-    city: 'San Francisco, CA',
-  },
-];
+import { BandSiteAPI } from './band-site-api.js';
+
+const bandSiteData = new BandSiteAPI('e0eea5f0-0f8c-4b54-9fc4-ff50843766d4');
 
 // select the parent element
 const concertList = document.querySelector('.calendar__list');
-console.log(concertList);
 
 //title for tablet/desktop
-
 const titleDesktop = () => {
   const titles_group = document.createElement('div');
   titles_group.classList.add('calendar__titles');
@@ -77,7 +46,7 @@ function displayConcert(concert) {
 
   const calendarDate = document.createElement('p');
   calendarDate.classList.add('calendar__date');
-  calendarDate.textContent = concert.date;
+  calendarDate.textContent = new Date(concert.date).toLocaleDateString();
   concertElement.append(calendarDate);
 
   const subheaderVenue = document.createElement('p');
@@ -97,7 +66,7 @@ function displayConcert(concert) {
 
   const calendarLocation = document.createElement('p');
   calendarLocation.classList.add('calendar__location');
-  calendarLocation.textContent = concert.city;
+  calendarLocation.textContent = concert.location;
   concertElement.append(calendarLocation);
 
   const calendarButton = document.createElement('button');
@@ -113,8 +82,9 @@ function displayConcert(concert) {
   concertList.append(concertElement);
 }
 
-function displayConcerts() {
-  dates.forEach((concert) => {
+async function displayConcerts() {
+  const allShows = await bandSiteData.getShows();
+  allShows.forEach((concert) => {
     displayConcert(concert);
   });
 }

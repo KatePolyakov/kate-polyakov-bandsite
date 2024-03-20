@@ -1,6 +1,6 @@
 import { BandSiteAPI } from './band-site-api.js';
 
-const bandSiteData = new BandSiteAPI('e0eea5f0-0f8c-4b54-9fc4-ff50843766d4');
+const bandSiteData = new BandSiteAPI('e0eea5f0-0f8c-4b54-9fc4-ff50843766d4'); //Api as a parameter;
 
 //find a div element ".comment" for comments
 const commentsList = document.querySelector('.comment');

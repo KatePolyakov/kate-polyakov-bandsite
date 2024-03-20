@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/shows.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../scripts/build-shows-page.js" defer></script>
+    <script src="../scripts/build-shows-page.js" type="module" defer></script>
     <title>Bandsite-Shows</title>
   </head>
   <body>
     <nav class="nav">
       <div class="nav__wrapper">
         <div class="nav__logo">
-          <a class="nav__logo-link" href="#"><img src="../assets/logo/Logo-bandsite.svg" /></a>
+          <a class="nav__logo-link" href="#"
+            ><img src="../assets/logo/Logo-bandsite.svg" alt="bandsite-logo"
+          /></a>
         </div>
         <div class="nav__links">
           <a href="../index.html" class="nav__links-a">Biography</a>
@@ -53,19 +55,19 @@
             <p class="footer__header">Get in Touch</p>
             <div class="footer__links">
               <a href="https://www.instagram.com" target="_blank"
-                ><img src="../assets/icons/SVG/Icon-instagram.svg"
+                ><img src="../assets/icons/SVG/Icon-instagram.svg" alt="bandsite-instagram"
               /></a>
-              <a href="https://www.facebook.com" target="_blank"
+              <a href="https://www.facebook.com" target="_blank" alt="bandsite-facebook"
                 ><img src="../assets/icons/SVG/Icon-facebook.svg"
               /></a>
-              <a href="https://www.twitter.com" target="_blank"
+              <a href="https://www.twitter.com" target="_blank" alt="bandsite-twitter"
                 ><img src="../assets/icons/SVG/Icon-twitter.svg"
               /></a>
             </div>
           </div>
           <div class="footer__wrapper-right">
             <div class="footer__logo-tablet">
-              <a><img src="../assets/logo/Logo-bandsite.svg" /></a>
+              <a><img src="../assets/logo/Logo-bandsite.svg" alt="bandsite-logo" /></a>
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@
         </div>
 
         <div class="footer__logo-phone">
-          <a><img src="../assets/logo/Logo-bandsite.svg" /></a>
+          <a><img src="../assets/logo/Logo-bandsite.svg" alt="bandsite-logo" /></a>
         </div>
         <p class="footer__copyright">Copyright The Bees Knees © 2023 All Rights Reserved</p>
       </div>
