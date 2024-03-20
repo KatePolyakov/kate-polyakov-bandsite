@@ -320,6 +320,7 @@
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   background-color: #fafafa;
+  resize: none;
   font-family: "Avenir-Regular";
   font-style: normal;
   font-size: 0.875rem;

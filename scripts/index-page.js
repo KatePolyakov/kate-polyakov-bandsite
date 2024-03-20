@@ -78,7 +78,7 @@ form.addEventListener('submit', (e) => {
   };
 
   comments.unshift(newComment);
-  displayComment(newComment);
+  displayComment();
   document.querySelector('.conversation__form-name').value = '';
   document.querySelector('.conversation__form-text').value = '';
 });
