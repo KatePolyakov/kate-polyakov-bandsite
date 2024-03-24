@@ -3,13 +3,13 @@
 @use 'partials/typography' as *;
 
 .about {
-  margin-top: 99px;
+  margin-top: 6.188rem;
 
   @include tablet {
-    margin-top: 73px;
+    margin-top: 4.563rem;
   }
   @include desktop {
-    margin-top: 81px;
+    margin-top: 5.063rem;
   }
 
   &__background {
@@ -73,7 +73,7 @@
       background-size: cover;
       height: 18rem;
       @include tablet {
-        margin: 0 72px;
+        margin: 0 4.5rem;
       }
       @include desktop {
         margin: 0 10rem;
@@ -85,7 +85,7 @@
     margin-top: 1rem;
 
     @include tablet {
-      margin: 2.25rem 72px 0;
+      margin: 2.25rem 4.5rem 0;
     }
     @include desktop {
       margin: 2.25rem 10rem 0;
@@ -100,7 +100,7 @@
   }
 
   &__blockquote-author {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   &__article {
@@ -110,7 +110,7 @@
     gap: 1rem;
 
     @include tablet {
-      margin: 2.25rem 108px 0;
+      margin: 2.25rem 6.75rem 0;
       gap: 2.25rem;
     }
     @include desktop {

@@ -17,16 +17,16 @@
   font-style: normal;
 }
 .about {
-  margin-top: 99px;
+  margin-top: 6.188rem;
 }
 @media screen and (min-width: 48rem) {
   .about {
-    margin-top: 73px;
+    margin-top: 4.563rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .about {
-    margin-top: 81px;
+    margin-top: 5.063rem;
   }
 }
 .about__background {
@@ -108,7 +108,7 @@
 }
 @media screen and (min-width: 48rem) {
   .about__bio-img {
-    margin: 0 72px;
+    margin: 0 4.5rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -121,7 +121,7 @@
 }
 @media screen and (min-width: 48rem) {
   .about__blockquote-speech {
-    margin: 2.25rem 72px 0;
+    margin: 2.25rem 4.5rem 0;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -144,7 +144,7 @@
   }
 }
 .about__blockquote-author {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .about__article {
   margin: 1rem 1rem 0;
@@ -154,7 +154,7 @@
 }
 @media screen and (min-width: 48rem) {
   .about__article {
-    margin: 2.25rem 108px 0;
+    margin: 2.25rem 6.75rem 0;
     gap: 2.25rem;
   }
 }

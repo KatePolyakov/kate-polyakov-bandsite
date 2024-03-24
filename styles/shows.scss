@@ -3,10 +3,10 @@
 @use 'partials/typography' as *;
 
 .shows {
-  margin-top: 99px;
+  margin-top: 6.188rem;
 
   @include tablet {
-    margin-top: 73px;
+    margin-top: 4.563rem;
   }
   @include desktop {
     margin-top: 5rem;
@@ -74,7 +74,7 @@
 
     @include desktop {
       display: flex;
-      width: 500px;
+      width: 31.25rem;
       margin-right: 7rem;
 
       iframe {
@@ -213,7 +213,7 @@
     margin: 1rem;
     background-color: $bandsite-black;
     color: $white;
-    height: 50px;
+    height: 3.125rem;
     @include mobile-header-demiLess;
     border-radius: 5px;
     width: -moz-available;

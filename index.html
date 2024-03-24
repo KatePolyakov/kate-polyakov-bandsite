@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/partials/global.css" />
     <link rel="stylesheet" href="./styles/bio.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/index-page.js" type="module" defer></script>
@@ -80,7 +80,10 @@
     <section class="conversation">
       <p class="conversation__header">Join the Conversation</p>
       <div class="conversation__main-group">
-        <img src="./assets/images/Mohan-muruge.jpg" alt="comments__photo" class="conversation__form-photo"/>
+        <img
+          src="./assets/images/Mohan-muruge.jpg"
+          alt="comments__photo"
+          class="conversation__form-photo" />
         <form class="conversation__form" id="conversation__form">
           <label for="nameInput">NAME</label>
           <input
@@ -99,8 +102,6 @@
             rows="5"></textarea>
           <button type="submit">COMMENT</button>
         </form>
-
-        
       </div>
       <div class="comment"></div>
     </section>

@@ -17,11 +17,11 @@
   font-style: normal;
 }
 .shows {
-  margin-top: 99px;
+  margin-top: 6.188rem;
 }
 @media screen and (min-width: 48rem) {
   .shows {
-    margin-top: 73px;
+    margin-top: 4.563rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -92,7 +92,7 @@
 @media screen and (min-width: 80rem) {
   .shows__music {
     display: flex;
-    width: 500px;
+    width: 31.25rem;
     margin-right: 7rem;
   }
   .shows__music iframe {
@@ -245,7 +245,7 @@
   margin: 1rem;
   background-color: #323232;
   color: #ffffff;
-  height: 50px;
+  height: 3.125rem;
   font-family: "Avenir-Demi";
   font-style: normal;
   font-size: 1.25rem;
