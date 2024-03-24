@@ -2,11 +2,27 @@ import { BandSiteAPI } from './band-site-api.js';
 
 const bandSiteData = new BandSiteAPI('e0eea5f0-0f8c-4b54-9fc4-ff50843766d4'); //Api as a parameter;
 
-//find a div element ".comment" for comments
+//find a div element ".comment" for all comments
 const commentsList = document.querySelector('.comment');
 
 //create new elements inside ".comment"
 const commentsDesktop = (item) => {
+
+  const commentWrapper = document.createElement('div');
+  commentWrapper.classList.add('comment__wrapper');
+  commentsList.append(commentWrapper);
+
+  //inside the comment__wrapper
+  const commentImg = document.createElement('div');
+  commentImg.classList.add('comment__img');
+  commentWrapper.append(commentImg);
+
+  const commentGroup = document.createElement('div');
+  commentGroup.classList.add('comment__group');
+  commentWrapper.append(commentGroup);
+
+  //inside comment__group
+
   const commentHeader = document.createElement('div');
   commentHeader.classList.add('comment__header');
 
@@ -25,8 +41,7 @@ const commentsDesktop = (item) => {
   commentText.classList.add('comment__text');
   commentText.textContent = item.comment;
 
-  commentsList.append(commentHeader);
-  commentsList.append(commentText);
+  commentGroup.append(commentHeader, commentText);
 };
 
 //function for display all comments on the page;

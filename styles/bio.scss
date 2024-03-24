@@ -167,6 +167,17 @@
 
     @include tablet {
       display: flex;
+      justify-content: space-between;
+      gap: 0;
+      img {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @include desktop {
+      img {
+        margin-bottom: 2rem;
+      }
     }
 
     img {
@@ -209,21 +220,42 @@
     }
   }
 
-  &__form {
+  &__main-group {
     display: flex;
-    flex-direction: column;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
-
+    gap: 1rem;
     border-bottom: 1px solid $mercury;
 
     @include tablet {
-      margin: 0 7rem;
-      padding-bottom: 2rem;
+      margin: 0 4rem;
     }
 
     @include desktop {
-      margin: 0 18rem;
+      margin: 0 16rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 2rem;
+
+    @include tablet {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+
+    &-photo {
+      border-radius: 50%;
+      width: 2.25rem;
+      height: 2.25rem;
+      margin-top: 1.6rem;
+
+      @include tablet {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 0.938rem;
+      }
     }
 
     label {
@@ -288,21 +320,53 @@
   flex-direction: column;
   padding-bottom: 2rem;
   @include tablet {
-    margin: 0 7rem;
+    margin: 0 4rem;
   }
   @include desktop {
-    margin: 0 18rem;
+    margin: 0 16rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid $mercury;
+
+    @include tablet {
+      padding: 2rem 0;
+    }
+  }
+
+  &__img {
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: $mercury;
+    border-radius: 50%;
+
+    @include tablet {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    @include tablet {
+      width: 89%;
+    }
+    @include desktop {
+    }
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
-    padding-left: 4rem;
+    padding-bottom: 0.5rem;
 
     @include tablet {
-      padding-top: 1rem;
-      padding-left: 4rem;
     }
 
     &-name {
@@ -324,12 +388,8 @@
   }
   &__text {
     @include mobile-subheader-regular;
-    border-bottom: 1px solid $mercury;
-    padding: 0 1rem 1rem 4rem;
 
     @include tablet {
-      padding-right: 0;
-      padding-bottom: 2rem;
       @include desk-tab-body-regular;
     }
   }

@@ -235,6 +235,16 @@
 @media screen and (min-width: 48rem) {
   .gallery__images {
     display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .gallery__images img {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .gallery__images img {
+    margin-bottom: 2rem;
   }
 }
 .gallery__images img {
@@ -287,22 +297,44 @@
     line-height: 3.5rem;
   }
 }
-.conversation__form {
+.conversation__main-group {
   display: flex;
-  flex-direction: column;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
+  gap: 1rem;
   border-bottom: 1px solid #e1e1e1;
 }
 @media screen and (min-width: 48rem) {
-  .conversation__form {
-    margin: 0 7rem;
-    padding-bottom: 2rem;
+  .conversation__main-group {
+    margin: 0 4rem;
   }
 }
 @media screen and (min-width: 80rem) {
+  .conversation__main-group {
+    margin: 0 16rem;
+  }
+}
+.conversation__form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 48rem) {
   .conversation__form {
-    margin: 0 18rem;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+.conversation__form-photo {
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-top: 1.6rem;
+}
+@media screen and (min-width: 48rem) {
+  .conversation__form-photo {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.938rem;
   }
 }
 .conversation__form label {
@@ -371,25 +403,51 @@
 }
 @media screen and (min-width: 48rem) {
   .comment {
-    margin: 0 7rem;
+    margin: 0 4rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .comment {
-    margin: 0 18rem;
+    margin: 0 16rem;
+  }
+}
+.comment__wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 48rem) {
+  .comment__wrapper {
+    padding: 2rem 0;
+  }
+}
+.comment__img {
+  height: 2.25rem;
+  width: 2.25rem;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+@media screen and (min-width: 48rem) {
+  .comment__img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.comment__group {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+@media screen and (min-width: 48rem) {
+  .comment__group {
+    width: 89%;
   }
 }
 .comment__header {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
-  padding-left: 4rem;
-}
-@media screen and (min-width: 48rem) {
-  .comment__header {
-    padding-top: 1rem;
-    padding-left: 4rem;
-  }
+  padding-bottom: 0.5rem;
 }
 .comment__header-name {
   font-family: "Avenir-Demi";
@@ -425,13 +483,9 @@
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.375rem;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 0 1rem 1rem 4rem;
 }
 @media screen and (min-width: 48rem) {
   .comment__text {
-    padding-right: 0;
-    padding-bottom: 2rem;
     font-family: "Avenir-Regular";
     font-style: normal;
     font-size: 1rem;
