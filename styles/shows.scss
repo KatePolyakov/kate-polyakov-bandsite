@@ -144,17 +144,17 @@
       cursor: pointer;
       border-bottom: 1px solid $silver;
     }
-  }
 
-  &__concert:hover {
-    @include tablet {
-      background-color: $alabaster;
+    &-hover {
+      @include tablet {
+        background-color: $alabaster;
+      }
     }
-  }
 
-  &__concert:focus-within {
-    @include tablet {
-      background-color: $silver;
+    &-active {
+      @include tablet {
+        background-color: $silver;
+      }
     }
   }
 
@@ -218,10 +218,11 @@
     border-radius: 5px;
     width: -moz-available;
     width: -webkit-fill-available;
-  }
 
-  &__button:hover {
-    background-color: $bandSite-DarkBlack;
+    &-hover,
+    &-active {
+      background-color: $bandSite-DarkBlack;
+    }
   }
 
   &__divider {

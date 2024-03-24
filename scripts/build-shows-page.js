@@ -38,6 +38,20 @@ function displayConcert(concert) {
   //2a. add class
   concertElement.classList.add('calendar__concert');
 
+  concertElement.setAttribute('tabindex', '0'); //concert hover
+  concertElement.addEventListener('mouseenter', () => {
+    concertElement.classList.add('calendar__concert-hover');
+  });
+  concertElement.addEventListener('mouseleave', () => {
+    concertElement.classList.remove('calendar__concert-hover');
+  });
+  concertElement.addEventListener('focusin', () => {
+    concertElement.classList.add('calendar__concert-active');
+  });
+  concertElement.addEventListener('focusout', () => {
+    concertElement.classList.remove('calendar__concert-active');
+  });
+
   //subheaders for mobile version
   const subheaderDate = document.createElement('p');
   subheaderDate.classList.add('calendar__subheader-date');
@@ -72,6 +86,21 @@ function displayConcert(concert) {
   const calendarButton = document.createElement('button');
   calendarButton.classList.add('calendar__button');
   calendarButton.innerText = 'BUY TICKETS';
+
+  calendarButton.setAttribute('tabindex', '0'); //button hover
+  calendarButton.addEventListener('mouseenter', () => {
+    calendarButton.classList.add('calendar__button-hover');
+  });
+  calendarButton.addEventListener('mouseleave', () => {
+    calendarButton.classList.remove('calendar__button-hover');
+  });
+  calendarButton.addEventListener('focusin', () => {
+    calendarButton.classList.add('calendar__button-active');
+  });
+  calendarButton.addEventListener('focusout', () => {
+    calendarButton.classList.remove('calendar__button-active');
+  });
+
   concertElement.append(calendarButton);
 
   const calendarHr = document.createElement('hr');

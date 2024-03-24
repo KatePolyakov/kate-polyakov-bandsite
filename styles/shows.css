@@ -179,12 +179,12 @@
   }
 }
 @media screen and (min-width: 48rem) {
-  .calendar__concert:hover {
+  .calendar__concert-hover {
     background-color: #fafafa;
   }
 }
 @media screen and (min-width: 48rem) {
-  .calendar__concert:focus-within {
+  .calendar__concert-active {
     background-color: #afafaf;
   }
 }
@@ -254,7 +254,7 @@
   width: -moz-available;
   width: -webkit-fill-available;
 }
-.calendar__button:hover {
+.calendar__button-hover, .calendar__button-active {
   background-color: #000000;
 }
 .calendar__divider {
